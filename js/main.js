@@ -221,7 +221,7 @@
 
 		/* submit via ajax */
 		submitHandler: function(form) {
-
+			
 			var sLoader = $('#submit-loader');
 
 			$.ajax({      	
