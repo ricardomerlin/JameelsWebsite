@@ -1095,7 +1095,7 @@ header .row {
 }
 header .top-bar {
 	display: block;
-	background: #000000;
+	background: #171717;
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
@@ -1225,13 +1225,15 @@ header .logo a {
 
 /* dropdown nav */
 .main-navigation {
-	background: #000000;
+	background: #181818;
 	padding: 24px 30px 42px;
 	margin: 0;
 	width: 100%;
 	height: auto;
 	clear: both;
 	display: none;
+	border: 1px solid white;
+	border-radius: 5px;
 }
 .main-navigation > li {
 	display: block;
@@ -1290,7 +1292,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515 url(../images/background.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1351,6 +1353,7 @@ header .logo a {
 	letter-spacing: .2rem;
 	color: #FFFFFF;
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	margin-top: 50px;
 }
 .intro-content .intro-position span {
 	display: inline-block;
@@ -1395,18 +1398,21 @@ header .logo a {
 }
 
 .intro-social {
-	display: block;
-	position: absolute;
+	display: flex;
+	/* position: absolute; */
+	justify-content: center;
 	width: 100%;
 	left: 0;
 	bottom: 7.2rem;
-	font-size: 3.3rem;
+	font-size: 5rem;
 	margin: 0;
+	margin-top: 50px;
 	padding: 0;
 }
+
 .intro-social li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 40px;
 	padding: 0;
 }
 .intro-social li a, .intro-social li a:visited {
@@ -1424,9 +1430,6 @@ header .logo a {
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
 		font-size: 7.6rem;
-	}
-	.intro-social {
-		font-size: 3rem;
 	}
 	.intro-social li {
 		margin: 0 15px;
@@ -1446,10 +1449,11 @@ header .logo a {
 		font-size: 1.3rem;
 	}
 	.intro-social {
-		font-size: 2.5rem;
+		flex-direction: column;
+		align-items: center;
 	}
 	.intro-social li {
-		margin: 0 10px;
+		margin: 10px 0;
 	}
 }
 @media only screen and (max-width:600px) {
@@ -1475,7 +1479,11 @@ header .logo a {
 		display: none !important;
 	}
 	.intro-social {
-		font-size: 2.4rem;
+		flex-direction: column;
+		align-items: center;
+	}
+	.intro-social li {
+		margin: 30px 0;
 	}
 }
 

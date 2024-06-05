@@ -137,7 +137,7 @@
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
    ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
+   var toggleButton = $('.menu-toggle, .contents'),
        nav = $('.main-navigation');
 
    // toggle button
@@ -185,6 +185,8 @@
 
 		offset: '25%'
 	});
+
+	
 
 
 	/*---------------------------------------------------- */
